@@ -660,6 +660,19 @@ footer h2 {
 .form-item {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.input-modal {
+  padding-left: 42px;
+}
+.input-modal:focus,
+.form-list textarea:focus {
+  outline: 1px solid #2196f3;
+}
+.input-modal:focus + .inpute-icon,
+.icon-close:hover,
+.icon-close:focus {
+  fill: #2196f3;
 }
 .terms-deal {
   color: var(--color);
@@ -685,4 +698,14 @@ input,
 textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+.inpute-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  width: 18px;
+  height: 18px;
+
+  fill: currentColor;
 }

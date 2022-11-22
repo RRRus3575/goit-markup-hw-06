@@ -417,25 +417,34 @@
             <ul class="ul form-list">
               <li class="form-item">
                 <label for="name">Ім'я</label>
-                <input type="text" id="name">
+                <input type="text" id="name" class="input-modal" topic="customer">
+                <svg class="inpute-icon">
+                  <use href="./images/symbol-defs.svg#icon-namesvg"></use>
+                </svg>
               </li>
               <li class="form-item">
                 <label for="tel">Телефон</label>
-                <input type="tel" id="tel">
+                <input type="tel" id="tel" class="input-modal" topic="customer">
+                <svg class="inpute-icon">
+                  <use href="./images/symbol-defs.svg#icon-tel"></use>
+                </svg>
               </li>
               <li class="form-item">
                 <label for="mail">Пошта</label>
-                <input type="email" id="mail">
+                <input type="email" id="mail" class="input-modal" topic="customer">
+                <svg class="inpute-icon">
+                  <use href="./images/symbol-defs.svg#icon-email"></use>
+                </svg>
               </li>
               <li class="form-item">
                 <label for="comment">Коментар</label>
                 <textarea name="" id="comment" rows="7" 
-                placeholder="Введіть текст"></textarea> 
+                placeholder="Введіть текст" topic="customer"></textarea> 
               </li>
                 
             </ul>
             <div class="terms-submit">
-              <input type="checkbox" id="check">
+              <input type="checkbox" id="check" topic="customer">
               <label for="check">Погоджуюся з розсилкою та приймаю 
                 <a href="#" class="terms-deal">Умови договору</a>
               </label>
