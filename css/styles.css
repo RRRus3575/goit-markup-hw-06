@@ -571,6 +571,8 @@ footer h2 {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  outline: none;
+  transition: border var(--time) var(--timing);
 }
 .subscribe-box input::placeholder {
   font-size: 16px;
@@ -665,11 +667,13 @@ footer h2 {
 }
 .input-modal {
   padding-left: 42px;
-  transition: outline var(--time) var(--timing);
+  transition: border var(--time) var(--timing);
 }
 .input-modal:focus,
-.form-list textarea:focus {
-  outline: 1px solid var(--color);
+.form-list textarea:focus,
+.subscribe-box input:focus {
+  border: 1px solid var(--color);
+  outline: none;
 }
 .input-modal:focus + .inpute-icon,
 .icon-close:hover,
@@ -694,13 +698,16 @@ textarea::placeholder {
 .form-list textarea {
   padding: 12px 16px;
   resize: none;
-  transition: outline var(--time) var(--timing);
+  transition: border var(--time) var(--timing);
 }
 
 input,
 textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+textarea {
+  height: 120px;
 }
 .inpute-icon {
   position: absolute;
