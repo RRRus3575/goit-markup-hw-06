@@ -721,15 +721,14 @@ textarea {
   transition: fill var(--time) var(--timing);
 }
 .checkbox {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
   position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 label {
   display: inline-block;
-}
-.svg-check {
 }
 .terms-submit > label {
   display: flex;
@@ -741,11 +740,11 @@ label {
   margin-right: 8px;
   border: solid 2px #212121;
   border-radius: 4px;
-  background-origin: border-box;
   transition: border var(--time) var(--timing),
     background-color var(--time) var(--timing);
 }
 .checkbox:checked ~ .svg-check {
   border: solid 2px var(--color);
   background-color: var(--color);
+  background-origin: border-box;
 }
