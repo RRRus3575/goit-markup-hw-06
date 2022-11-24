@@ -152,6 +152,9 @@ img {
   color: #757575;
   transition: color var(--time) var(--timing);
 }
+.link-contact {
+  color: rgba(255, 255, 255, 0.6);
+}
 .overlay {
   max-width: 1600px;
   margin-left: auto;
@@ -239,6 +242,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
   border: none;
   background-color: var(--color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -353,7 +357,7 @@ img {
   justify-content: center;
   align-items: center;
   padding: 12px;
-  color: #757575;
+  color: #afb1b8;
   border-radius: 25px;
   transition: color var(--time) var(--timing),
     background-color var(--time) var(--timing);
@@ -430,6 +434,7 @@ img {
   line-height: 1.2;
   color: #ffffff;
 }
+
 .menu {
   display: flex;
   justify-content: center;
@@ -554,6 +559,9 @@ footer h2 {
 .foot-wrap {
   margin-left: 70px;
   margin-right: 93px;
+}
+.subscribe > label {
+  font-weight: 700;
 }
 .subscribe-box {
   display: flex;
@@ -717,7 +725,7 @@ textarea {
   width: 18px;
   height: 18px;
 
-  fill: currentColor;
+  fill: #212121;
   transition: fill var(--time) var(--timing);
 }
 .checkbox {
